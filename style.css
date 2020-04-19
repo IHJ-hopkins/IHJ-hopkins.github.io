@@ -1,0 +1,382 @@
+@font-face {
+  font-family: Cooper;
+  src: url("assets/type/CooperBT_BoldItalic.woff");
+}
+
+@font-face {
+  font-family: Cooper2;
+  src: url("assets/type/CooperBoldItalicBT.otf");
+}
+
+@font-face {
+  font-family: Larsseit;
+  src: url("assets/type/Larsseit.ttf");
+}
+@font-face {
+  font-family: Union;
+  src: url("assets/type/union.woff");
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ef9570;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+button {
+  background-color: #f2eee5;
+  font-family: Union;
+  border: none;
+  color: #093350;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: Cooper;
+  font-size: 33pt;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 37pt;
+}
+
+h2 {
+  font-family: Union;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 26pt;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+h3 {
+  font-family: Union;
+  margin: 0 20px;
+  font-size: 40pt;
+  letter-spacing: -1pt;
+}
+
+h4 {
+  font-family: Cooper;
+  margin: 0;
+  font-size: 30pt;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0.5px solid black;
+  z-index: 10;
+}
+
+label {
+  font-family: Union;
+}
+
+p {
+  font-family: Union;
+  font-size: 13pt;
+  line-height: 17pt;
+}
+
+select {
+  width: 100px;
+}
+
+.big-container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.horiz-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-and-controls {
+  /*padding-top: 20px;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 0 20px 5px 20px;*/
+  padding: 0 20px;
+  font-family: Union;
+  /*flex: 0 1 40px;*/
+  background-color: white;
+  height: 33px;
+}
+
+.nav-bar p {
+  margin: 0;
+}
+
+.links {
+  font-size: 12pt;
+}
+
+.name {
+  text-align: center;
+}
+
+.update-date {
+  text-align: right;
+  font-size: 12pt;
+}
+
+.body-container {
+  flex: 1 1 auto;
+  padding: 0; 
+  margin: 0;
+  display: grid;
+  grid-template-rows: [row1-s] 50% [row2-s] 50% [row2-e];
+  grid-template-columns: [col1-s] 50% [col2-s] 50% [col2-e];
+  overflow: hidden;
+}
+
+.body-nongrid {
+  padding: 0;
+  margin: 0;
+}
+
+.map-toggles {
+  border: solid 1px black;
+  text-transform: uppercase;
+  margin: 40px 5px 5px 5px;
+  font-size: 10pt;
+}
+
+.rect-top-left{
+  grid-column-start: col1-s;
+  grid-column-end: col2-s;
+  grid-r3w-start: row1-s;
+  grid-row-end: row2-s;
+  background-color: #b1bbbd;
+  color: #093350;
+}
+
+.rect-bot-left{
+  grid-column-start: col1-s;
+  grid-column-end: col2-s;
+  grid-row-start: row2-s;
+  grid-row-end: row2-e;
+  background-color: #f2eee5;
+  color: #093350;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rect-right{
+  grid-column-start: col2-s;
+  grid-column-end: col2-e;
+  grid-row-start: row1-s;
+  grid-row-end: row2-e;
+  background-color: #003e28;
+  color: #f2eee5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.subheading {
+  font-size: 20pt;
+  /*text-decoration: underline;*/
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.box {
+  padding: 20px;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scroll-fade {
+  width: 100%;
+  left: 0;
+  margin-top: -40px;
+  z-index: 10;
+  height: 50px;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(242,238,229,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(242,238,229,1) 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(242,238,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */*/
+}
+
+#leftCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leftCol p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0 30px;
+}
+
+.stats-list {
+  width: 300px;
+  overflow-y: scroll;
+  max-height: 230px;
+}
+
+.stats-list p {
+  margin: 0;
+  font-size: 15pt;
+  line-height: 21pt;
+}
+
+.stats-list a {
+  color: #ef9570;
+}
+
+.options {
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+
+#covidBoth {
+  color: #ef9570;
+}
+
+
+
+#stats-pg {
+  background-color: #f2eee5;
+  color: #093350;
+}
+
+/*MAP*/
+
+#us-map{
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 400px;
+  margin: 10px 40px;
+}
+
+#us-stat-map{
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 500px;
+  margin: 10px 40px;
+}
+
+#carceratedTog {
+  color: #ef9570;
+}
+
+#caseTog {
+  color: #ef9570;
+}
+
+#deathTog {
+  color: #ef9570;
+}
+
+path:hover, circle:hover {
+  stroke: #b1bbbd !important;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  fill: #b1bbbd !important;
+  cursor: pointer;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #f2eee5;
+  border: 1px solid #ef9570;
+  padding: 5px;
+  font-family: Union;
+  text-transform: uppercase;
+  color: #003e28;
+}
+
+#info-stat-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #f2eee5;
+  border: 1px solid #ef9570;
+  padding: 5px;
+  font-family: Union;
+  text-transform: uppercase;
+  color: #003e28;
+}
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2eee5; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #093350; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #093350; 
+}
+
+/*TOOLTIP*/
+.hover-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 1;
+  font-family: Union;
+  text-transform: uppercase;
+  color: #003e28;
+}
+
+.bgimg {
+    background-image: url('assets/imgs/blue.png');
+}

@@ -1,0 +1,769 @@
+{
+	"states": [
+		{
+			"ID": "AL",
+			"name": "Alabama",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "AK",
+			"name": "Alaska",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "AZ",
+			"name": "Arizona",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 2,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "AR",
+			"name": "Arkansas",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "CA",
+			"name": "California",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 12,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 13,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 6,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "CO",
+			"name": "Colorado",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 2,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "CT",
+			"name": "Connecticut",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "DC",
+			"name": "District of Columbia",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "DE",
+			"name": "Delaware",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "FL",
+			"name": "Florida",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 1,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 2,
+			"deaths_correctional_staff":1,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "GA",
+			"name": "Georgia",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 16,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 20,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "HI",
+			"name": "Hawaii",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "ID",
+			"name": "Idaho",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 1,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "IL",
+			"name": "Illinois",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 1,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "IN",
+			"name": "Indiana",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 3,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 2,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "IA",
+			"name": "Iowa",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "KS",
+			"name": "Kansas",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "KY",
+			"name": "Kentucky",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "LA",
+			"name": "Louisiana",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 1,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "ME",
+			"name": "Maine",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "MD",
+			"name": "Maryland",
+			"orgs": [
+				"Hopkins Incarceration and Health Justice Collective",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "MA",
+			"name": "Massachusetts",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff":0,
+			"cases_health_staff": 1,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "MI",
+			"name": "Michigan",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 6,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 68,
+			"deaths_correctional_staff":1,
+			"cases_health_staff": 9,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "MN",
+			"name": "Minnesota",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 1,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 4,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "MS",
+			"name": "Mississippi",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "MO",
+			"name": "Missouri",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "MT",
+			"name": "Montana",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "NE",
+			"name": "Nebraska",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "NV",
+			"name": "Nevada",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 3,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "NH",
+			"name": "New Hampshire",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "NJ",
+			"name": "New Jersey",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 23,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 68,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 16,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "NM",
+			"name": "New Mexico",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "NY",
+			"name": "New York",
+			"orgs": [
+				"FreeThemAll4PublicHealth",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 19,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 54,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 10,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "NC",
+			"name": "North Carolina",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "ND",
+			"name": "North Dakota",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "OH",
+			"name": "Ohio",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 2,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "OK",
+			"name": "Oklahoma",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "OR",
+			"name": "Oregon",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 1,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "PA",
+			"name": "Pennsylvania",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 1,
+			"deaths_incarcerated": 1,
+			"cases_correctional_staff": 7,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 3,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "RI",
+			"name": "Rhode Island",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "SC",
+			"name": "South Carolina",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 3,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 1,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "SD",
+			"name": "South Dakota",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "TN",
+			"name": "Tennessee",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "TX",
+			"name": "Texas",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 4,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 21,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 2,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "UT",
+			"name": "Utah",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 2,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "VT",
+			"name": "Vermont",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+				{
+			"ID": "VA",
+			"name": "Virginia",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "WA",
+			"name": "Washington",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 1,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "WV",
+			"name": "West Virginia",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "WI",
+			"name": "Wisconsin",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 3,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 5,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		},
+		{
+			"ID": "WY",
+			"name": "Wyoming",
+			"orgs": [
+				"orgA",
+				"orgB",
+				"orgC"
+				],
+			"cases_incarcerated": 0,
+			"deaths_incarcerated": 0,
+			"cases_correctional_staff": 0,
+			"deaths_correctional_staff": 0,
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0
+		}
+	]
+}
