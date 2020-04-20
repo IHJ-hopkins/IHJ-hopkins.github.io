@@ -5,6 +5,9 @@ $(document).ready(function(){
   var red = '#ff0000';
   var black = '#000000';
   var mapToggleClicked = [1, 0, 0, 1, 1];
+  var dataToggle = [0, 0, 0, 0, 0, 0];
+  let allData = [];
+  let arrayMaxDeath = [];
 
   function getObjects(obj, key, val) {
           var objects = [];
@@ -157,7 +160,7 @@ $(document).ready(function(){
         deathNumHealth[i] = stateList.states[i].deaths_health_staff;
         stateIdList[i] = stateList.states[i].ID;  
       }
-      console.log(deathNumCorrectional);
+      allData = [caseNumIncarcerated, deathNumIncarcerated, caseNumCorrectional, deathNumCorrectional, caseNumHealth, deathNumHealth];
 
       let maxCaseIncarcerated = Math.max.apply(Math, caseNumIncarcerated);
       let maxCaseCorrectional = Math.max.apply(Math, caseNumCorrectional);
@@ -165,8 +168,7 @@ $(document).ready(function(){
       let maxDeathIncarcerated = Math.max.apply(Math, deathNumIncarcerated);
       let maxDeathCorrectional = Math.max.apply(Math, deathNumCorrectional);
       let maxDeathHealth = Math.max.apply(Math, deathNumHealth);
-      let arrayMaxDeath = [maxCaseIncarcerated, maxCaseCorrectional, maxCaseHealth, maxDeathIncarcerated, maxDeathCorrectional, maxDeathHealth];
-      console.log(arrayMaxDeath);
+      arrayMaxDeath = [maxCaseIncarcerated, maxCaseCorrectional, maxCaseHealth, maxDeathIncarcerated, maxDeathCorrectional, maxDeathHealth];
 
 // MAP TOGGLES
     
@@ -180,7 +182,6 @@ $(document).ready(function(){
           mapToggleClicked[0] = 1;
           $('#carceratedTog').css("color",orange);
         }
-        console.log(mapToggleClicked);
       });
 
       $('#correctionalTog').click(function(){
@@ -192,7 +193,6 @@ $(document).ready(function(){
           mapToggleClicked[1] = 1;
           $('#correctionalTog').css("color",orange);
         }
-        console.log(mapToggleClicked);
       });
 
       $('#healthTog').click(function(){
@@ -204,7 +204,6 @@ $(document).ready(function(){
           mapToggleClicked[2] = 1;
           $('#healthTog').css("color",orange);
         }
-        console.log(mapToggleClicked);
       });
       $('#caseTog').click(function(){
         if (mapToggleClicked[3] == 1) {
@@ -217,7 +216,6 @@ $(document).ready(function(){
           mapToggleClicked[3] = 1;
           $('#caseTog').css("color",orange);
         }
-        console.log(mapToggleClicked);
       });
 
       $('#deathTog').click(function(){
@@ -231,28 +229,87 @@ $(document).ready(function(){
           mapToggleClicked[4] = 1;
           $('#deathTog').css("color",orange);
         }
-        console.log(mapToggleClicked);
       });
 
   // CHANGING THE MAP COLOR - IMPORTANT!
-  // $('#carceratedTog, #correctionalTog, #healthTog, #caseTog, #deathTog').click(function(){
-  //   if (mapToggleClicked[3] == 1 && mapToggleClicked[4] == 0) { // CASES ONLY
-      
-  //   }
-  //   elseif (mapToggleClicked[3] == 1 && mapToggleClicked[4] == 1) { // BOTH CASES & DEATHS
-
-  //   }
-  //   elseif (mapToggleClicked[3] == 0 && mapToggleClicked[4] == 1) { // DEATHS ONLY
-
-  //   }
-  // });
-
-
-      for (var i = 0; i < 51; i++) {
-          $('#'+stateIdList[i]).css("fill",orange);
-          $('#'+stateIdList[i]).css("fill-opacity",caseNumIncarcerated[i]/maxCaseIncarcerated+0.1);
+  $('#carceratedTog, #correctionalTog, #healthTog, #caseTog, #deathTog').click(function(){
+    dataToggle = [0, 0, 0, 0, 0, 0];
+    if (mapToggleClicked[3] == 1) {
+      if (mapToggleClicked[4] == 1) { // cases AND deaths
+        for (var i = 0; i < 3; i++) {
+          if (mapToggleClicked[i] == 1) {
+            dataToggle[2*i] = 1;
+            dataToggle[2*i + 1] = 1;
+          }
+          else {
+            dataToggle[2*i] = 0;
+            dataToggle[2*i + 1] = 0;
+          }
         }
-        $('#covidInmatesMap').css("color",orange);
+      }
+      else { // cases ONLY
+        for (var i = 0; i < 3; i++) {
+          if (mapToggleClicked[i] == 1) {
+            dataToggle[2*i] = 1;
+          }
+          else {
+            dataToggle[2*i] = 0;
+          }
+        }
+      }
+    }
+    else { // deaths ONLY
+      for (var i = 0; i < 3; i++) {
+        if (mapToggleClicked[i] == 1) {
+          dataToggle[2*i+1] = 1;
+        }
+        else {
+          dataToggle[2*i+1] = 0;
+        }
+      }
+    }
+
+    let indexArray = [];
+    let arrayTotal = [];
+
+    for (var i = 0; i < dataToggle.length; i++){
+      if (dataToggle[i] == 1) {
+        indexArray.push(i);
+      }
+    }
+
+    function sumArrays(array1, array2) {
+      var arrayTotal = []; 
+      for (var i = 0; i < array1.length; i++) {  
+        arrayTotal.push(array1[i] + array2[i]);
+      }
+      return arrayTotal;
+    }
+
+    if (indexArray.length > 1) {
+      arrayTotal = sumArrays(allData[indexArray[0]], allData[indexArray[1]]);
+      if (indexArray.length > 2) {
+        for (var i = 2; i < indexArray.length; i++) {
+          arrayTotal = sumArrays(arrayTotal, allData[indexArray[i]]);
+        }
+      }
+    }
+    else {
+      arrayTotal = allData[indexArray[0]];
+    }
+
+    let arrayTotalMax = Math.max.apply(Math, arrayTotal);
+
+  // PERFORMING COLOR CALCULATIONS
+    for (var i = 0; i < 51; i++) {
+        $('#'+stateIdList[i]).css("fill",orange);
+        $('#'+stateIdList[i]).css("fill-opacity",arrayTotal[i]/arrayTotalMax+0.1);
+      }
+      // $('#covidInmatesMap').css("color",orange);
+  });
+
+
+  
 
 // TEXT THAT DISPLAYS BELOW MAP
       $('path.map-state').on('click', function(e){
