@@ -53,12 +53,12 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
-			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
-			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"cases_incarcerated": -1,
+			"deaths_incarcerated": -1,
+			"cases_correctional_staff": -1,
+			"deaths_correctional_staff": -1,
+			"cases_health_staff": -1,
+			"deaths_health_staff": -1
 		},
 		{
 			"ID": "CA",
@@ -113,12 +113,12 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
-			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
-			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"cases_incarcerated": -1,
+			"deaths_incarcerated": -1,
+			"cases_correctional_staff": -1,
+			"deaths_correctional_staff": -1,
+			"cases_health_staff": -1,
+			"deaths_health_staff": -1
 		},
 		{
 			"ID": "DE",
@@ -173,12 +173,12 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
-			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
-			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"cases_incarcerated": -1,
+			"deaths_incarcerated": -1,
+			"cases_correctional_staff": -1,
+			"deaths_correctional_staff": -1,
+			"cases_health_staff": -1,
+			"deaths_health_staff": -1
 		},
 		{
 			"ID": "ID",
@@ -368,12 +368,12 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
-			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
-			"deaths_correctional_staff": 0,
-			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"cases_incarcerated": -1,
+			"deaths_incarcerated": -1,
+			"cases_correctional_staff": -1,
+			"deaths_correctional_staff": -1,
+			"cases_health_staff": -1,
+			"deaths_health_staff": -1
 		},
 		{
 			"ID": "MO",
@@ -683,12 +683,12 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
-			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
-			"deaths_correctional_staff": 0,
-			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"cases_incarcerated": -1,
+			"deaths_incarcerated": -1,
+			"cases_correctional_staff": -1,
+			"deaths_correctional_staff": -1,
+			"cases_health_staff": -1,
+			"deaths_health_staff": -1
 		},
 				{
 			"ID": "VA",

@@ -7,20 +7,28 @@ $(document).ready(function(){
   var mapToggleClicked = [1, 0, 0, 1, 1];
   var dataToggle = [0, 0, 0, 0, 0, 0];
   let allData = [];
-  let arrayMaxDeath = [];
+
 
   function getObjects(obj, key, val) {
-          var objects = [];
-          for (var i in obj) {
-              if (!obj.hasOwnProperty(i)) continue;
-              if (typeof obj[i] == 'object') {
-                  objects = objects.concat(getObjects(obj[i], key, val));
-              } else if (i == key && obj[key] == val) {
-                  objects.push(obj);
-              }
-          }
-          return objects;
+    var objects = [];
+    for (var i in obj) {
+      if (!obj.hasOwnProperty(i)) continue;
+      if (typeof obj[i] == 'object') {
+          objects = objects.concat(getObjects(obj[i], key, val));
+      } else if (i == key && obj[key] == val) {
+          objects.push(obj);
       }
+    }
+    return objects;
+  }
+
+  function sumArrays(array1, array2) {
+    var arrayTotal = []; 
+    for (var i = 0; i < array1.length; i++) {  
+      arrayTotal.push(array1[i] + array2[i]);
+    }
+    return arrayTotal;
+  }
 
   // JSON REFRESH TIMER
   var previous = null;
@@ -110,21 +118,6 @@ $(document).ready(function(){
   $('#covidDeath').text(inmateDeath+staffDeath + ' deaths');
   $('#covidCase').text(inmateCase+staffCase + ' cases');
 
-  // PICK A STATE
-  // $("input").keyup(function() {
-  //     var value = $( this ).val();
-  //     console.log(value);
-  //   })
-  // .keyup();
-
-  // function displayVals() {
-  //   var selectedState = $( "#selectState" ).val();
-  //   console.log(selectedState);
-  //   }
-   
-  // $("select").change(displayVals);
-  // displayVals();
-
   // MAP ON CLICK
 
   $('path.map-state').on('click', function(e){
@@ -162,13 +155,13 @@ $(document).ready(function(){
       }
       allData = [caseNumIncarcerated, deathNumIncarcerated, caseNumCorrectional, deathNumCorrectional, caseNumHealth, deathNumHealth];
 
-      let maxCaseIncarcerated = Math.max.apply(Math, caseNumIncarcerated);
-      let maxCaseCorrectional = Math.max.apply(Math, caseNumCorrectional);
-      let maxCaseHealth = Math.max.apply(Math, caseNumHealth);
-      let maxDeathIncarcerated = Math.max.apply(Math, deathNumIncarcerated);
-      let maxDeathCorrectional = Math.max.apply(Math, deathNumCorrectional);
-      let maxDeathHealth = Math.max.apply(Math, deathNumHealth);
-      arrayMaxDeath = [maxCaseIncarcerated, maxCaseCorrectional, maxCaseHealth, maxDeathIncarcerated, maxDeathCorrectional, maxDeathHealth];
+      // set default map view (incarcerated cases + deaths)
+      var arrayTotalDefault = sumArrays(caseNumIncarcerated, deathNumIncarcerated);
+      var arrayTotalDefaultMax = Math.max.apply(Math, arrayTotalDefault);
+      for (var i = 0; i < 51; i++) {
+        $('#'+stateIdList[i]).css("fill",orange);
+        $('#'+stateIdList[i]).css("fill-opacity",arrayTotalDefault[i]/arrayTotalDefaultMax+0.1);
+      }
 
 // MAP TOGGLES
     
@@ -278,13 +271,13 @@ $(document).ready(function(){
       }
     }
 
-    function sumArrays(array1, array2) {
-      var arrayTotal = []; 
-      for (var i = 0; i < array1.length; i++) {  
-        arrayTotal.push(array1[i] + array2[i]);
-      }
-      return arrayTotal;
-    }
+    // function sumArrays(array1, array2) {
+    //   var arrayTotal = []; 
+    //   for (var i = 0; i < array1.length; i++) {  
+    //     arrayTotal.push(array1[i] + array2[i]);
+    //   }
+    //   return arrayTotal;
+    // }
 
     if (indexArray.length > 1) {
       arrayTotal = sumArrays(allData[indexArray[0]], allData[indexArray[1]]);
@@ -302,10 +295,9 @@ $(document).ready(function(){
 
   // PERFORMING COLOR CALCULATIONS
     for (var i = 0; i < 51; i++) {
-        $('#'+stateIdList[i]).css("fill",orange);
-        $('#'+stateIdList[i]).css("fill-opacity",arrayTotal[i]/arrayTotalMax+0.1);
-      }
-      // $('#covidInmatesMap').css("color",orange);
+      $('#'+stateIdList[i]).css("fill",orange);
+      $('#'+stateIdList[i]).css("fill-opacity",arrayTotal[i]/arrayTotalMax+0.1);
+    }
   });
 
 
