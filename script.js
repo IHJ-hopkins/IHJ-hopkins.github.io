@@ -60,7 +60,7 @@ $(document).ready(function(){
     $('.body-nongrid').height(bodyHeight);
   });
 
-  // MAP
+  // MAP, MAIN PAGE
   $("path, circle").hover(function(e) {
     $('#info-box').css('display','block');
     $('#info-box').html($(this).data('info'));
@@ -84,12 +84,36 @@ $(document).ready(function(){
     });
   }
 
+  // MAP MOUSEOVER, STATS
+  $("path, circle").hover(function(e) {
+    $('#info-stat-box').css('display','block');
+    $('#info-stat-box').html($(this).data('info'));
+  });
+
+  $("path, circle").mouseleave(function(e) {
+    $('#info-stat-box').css('display','none');
+  });
+
+  $(document).mousemove(function(e) {
+    $('#info-stat-box').css('top',e.pageY-$('#info-stat-box').height()-30);
+    $('#info-stat-box').css('left',e.pageX-($('#info-stat-box').width())/2);
+  }).mouseover();
+
+  var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if(ios) {
+    $('a').on('click touchend', function() {
+      var link = $(this).attr('href');
+      window.open(link,'_blank');
+      return false;
+    });
+  }
+
   // COVID TRACKER
 
-  let inmateDeath = 1;
-  let inmateCase = 92; 
-  let staffDeath = 1;
-  let staffCase = 336;
+  let inmateDeath = 0;
+  let inmateCase = 529; 
+  let staffDeath = 2;
+  let staffCase = 554;
 
   $('#covidInmates').click(function(){
     $('#covidDeath').text(inmateDeath + ' deaths');
@@ -167,37 +191,70 @@ $(document).ready(function(){
     
     // TOGGLE SELECTOR
       $('#carceratedTog').click(function(){
+        console.log(mapToggleClicked);
+        console.log('carcerated tog clicked!');
+        if (mapToggleClicked[0] == 1) { // if this is the 2nd click, check to see whether others are on
+          if (mapToggleClicked[1] == 0 && mapToggleClicked[2] == 0) {
+            mapToggleClicked[0] = 1;
+          }
+          else { // actually turning it off
+            mapToggleClicked[0] = 0;
+          }
+        }
+        else { // turning it back on
+          mapToggleClicked[0] = 1;
+        }
+
+        // separately determining color
         if (mapToggleClicked[0] == 1) {
-          mapToggleClicked[0] = 0;
-          $('#carceratedTog').css("color",black);
+          $('#carceratedTog').css("color",orange);
         }
         else {
-          mapToggleClicked[0] = 1;
-          $('#carceratedTog').css("color",orange);
+          $('#carceratedTog').css("color",black);
         }
       });
 
       $('#correctionalTog').click(function(){
-        if (mapToggleClicked[1] == 1) {
-          mapToggleClicked[1] = 0;
-          $('#correctionalTog').css("color",black);
+        console.log(mapToggleClicked);
+        if (mapToggleClicked[1] == 1) { // if [1] is already on
+          if (mapToggleClicked[0] == 0 && mapToggleClicked[2] == 0) { // if [0] and [2] are off
+            console.log('0 and 2 are both off!');
+            mapToggleClicked[1] = 1; // [1] stays on
+          }
+          else { // actually turning it off
+            mapToggleClicked[1] = 0;
+          }
         }
         else {
           mapToggleClicked[1] = 1;
+        }
+
+        if (mapToggleClicked[1] == 1) {
           $('#correctionalTog').css("color",orange);
+        }
+        else {
+          $('#correctionalTog').css("color",black);
         }
       });
 
       $('#healthTog').click(function(){
+        console.log(mapToggleClicked);
         if (mapToggleClicked[2] == 1) {
-          mapToggleClicked[2] = 0;
-          $('#healthTog').css("color",black);
+          if (mapToggleClicked[0] == 0 && mapToggleClicked[1] == 0) {
+            mapToggleClicked[2] = 1;
+            $('#healthTog').css("color",orange);
+          }
+          else {
+            mapToggleClicked[2] = 0;
+            $('#healthTog').css("color",black);
+          }
         }
         else {
           mapToggleClicked[2] = 1;
           $('#healthTog').css("color",orange);
         }
       });
+
       $('#caseTog').click(function(){
         if (mapToggleClicked[3] == 1) {
           if (mapToggleClicked[4] == 1) {
@@ -271,14 +328,6 @@ $(document).ready(function(){
       }
     }
 
-    // function sumArrays(array1, array2) {
-    //   var arrayTotal = []; 
-    //   for (var i = 0; i < array1.length; i++) {  
-    //     arrayTotal.push(array1[i] + array2[i]);
-    //   }
-    //   return arrayTotal;
-    // }
-
     if (indexArray.length > 1) {
       arrayTotal = sumArrays(allData[indexArray[0]], allData[indexArray[1]]);
       if (indexArray.length > 2) {
@@ -300,8 +349,6 @@ $(document).ready(function(){
     }
   });
 
-
-  
 
 // TEXT THAT DISPLAYS BELOW MAP
       $('path.map-state').on('click', function(e){

@@ -8,12 +8,15 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
+			"cases_incarcerated": 22,
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 1,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 2616,
+			"n_correctional_staff": 0,
+			"n_health_staff": 0
 		},
 		{
 			"ID": "AK",
@@ -25,10 +28,13 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 2,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 25,
+			"n_correctional_staff": 0,
+			"n_health_staff": 0
 		},
 		{
 			"ID": "AZ",
@@ -40,10 +46,13 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 1,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 2,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 14610,
+			"n_correctional_staff": 0,
+			"n_health_staff": 0
 		},
 		{
 			"ID": "AR",
@@ -58,7 +67,10 @@
 			"cases_correctional_staff": -1,
 			"deaths_correctional_staff": -1,
 			"cases_health_staff": -1,
-			"deaths_health_staff": -1
+			"deaths_health_staff": -1,
+			"n_incarcerated": -1,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "CA",
@@ -70,10 +82,13 @@
 				],
 			"cases_incarcerated": 12,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 13,
+			"cases_correctional_staff": 20,
 			"deaths_correctional_staff":0,
-			"cases_health_staff": 6,
-			"deaths_health_staff": 0
+			"cases_health_staff": 8,
+			"deaths_health_staff": 0,
+			"n_incarcerated": 38466,
+			"n_correctional_staff": 0,
+			"n_health_staff": 0
 		},
 		{
 			"ID": "CO",
@@ -85,10 +100,13 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 3,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 2,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 1195,
+			"n_correctional_staff": 0,
+			"n_health_staff": 0
 		},
 				{
 			"ID": "CT",
@@ -103,7 +121,10 @@
 			"cases_correctional_staff": 0,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 477,
+			"n_correctional_staff": 0,
+			"n_health_staff": 0
 		},
 		{
 			"ID": "DC",
@@ -118,7 +139,10 @@
 			"cases_correctional_staff": -1,
 			"deaths_correctional_staff": -1,
 			"cases_health_staff": -1,
-			"deaths_health_staff": -1
+			"deaths_health_staff": -1,
+			"n_incarcerated": -1,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "DE",
@@ -133,7 +157,10 @@
 			"cases_correctional_staff": 0,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 109,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "FL",
@@ -145,10 +172,13 @@
 				],
 			"cases_incarcerated": 1,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 2,
-			"deaths_correctional_staff":1,
+			"cases_correctional_staff": 3,
+			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 28577,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 				{
 			"ID": "GA",
@@ -158,12 +188,15 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 16,
+			"cases_incarcerated": 17,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 20,
+			"cases_correctional_staff": 33,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 16539,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "HI",
@@ -178,7 +211,10 @@
 			"cases_correctional_staff": -1,
 			"deaths_correctional_staff": -1,
 			"cases_health_staff": -1,
-			"deaths_health_staff": -1
+			"deaths_health_staff": -1,
+			"n_incarcerated": -1,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "ID",
@@ -190,10 +226,13 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 1,
+			"cases_correctional_staff": 3,
 			"deaths_correctional_staff":0,
-			"cases_health_staff": 1,
-			"deaths_health_staff": 0
+			"cases_health_staff": 0,
+			"deaths_health_staff": 0,
+			"n_incarcerated": 4336,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "IL",
@@ -203,12 +242,15 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 1,
+			"cases_incarcerated": 7,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 1,
+			"cases_correctional_staff": 2,
 			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
-			"deaths_health_staff": 0
+			"cases_health_staff": 3,
+			"deaths_health_staff": 0,
+			"n_incarcerated": 3323,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 				{
 			"ID": "IN",
@@ -223,7 +265,10 @@
 			"cases_correctional_staff": 3,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 2,
-			"deaths_health_staff": 0
+			"deaths_health_staff": 0,
+			"n_incarcerated": 3828,
+			"n_correctional_staff": -1,
+			"n_health_staff": -1
 		},
 		{
 			"ID": "IA",
@@ -233,9 +278,9 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
+			"cases_incarcerated": 14,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 4,
 			"deaths_correctional_staff":0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -252,7 +297,7 @@
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 1,
 			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
+			"cases_health_staff": 1,
 			"deaths_health_staff": 0
 		},
 		{
@@ -278,11 +323,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 1,
+			"cases_incarcerated": 82,
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 0,
 			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
+			"cases_health_staff": 2,
 			"deaths_health_staff": 0
 		},
 		{
@@ -308,11 +353,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
+			"cases_incarcerated": 1,
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 0,
-			"deaths_correctional_staff":0,
-			"cases_health_staff": 0,
+			"deaths_correctional_staff":2,
+			"cases_health_staff": 3,
 			"deaths_health_staff": 0
 		},
 		{
@@ -326,7 +371,7 @@
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 0,
-			"deaths_correctional_staff":0,
+			"deaths_correctional_staff":10,
 			"cases_health_staff": 1,
 			"deaths_health_staff": 0
 		},
@@ -338,11 +383,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 6,
+			"cases_incarcerated": 3,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 68,
+			"cases_correctional_staff": 74,
 			"deaths_correctional_staff":1,
-			"cases_health_staff": 9,
+			"cases_health_staff": 4,
 			"deaths_health_staff": 0
 		},
 		{
@@ -353,11 +398,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 1,
+			"cases_incarcerated": 3,
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 1,
 			"deaths_correctional_staff": 0,
-			"cases_health_staff": 4,
+			"cases_health_staff": 1,
 			"deaths_health_staff": 0
 		},
 		{
@@ -415,7 +460,7 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 1,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -428,9 +473,9 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
+			"cases_incarcerated": 8,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 3,
+			"cases_correctional_staff": 10,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -458,9 +503,9 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 23,
+			"cases_incarcerated": 19,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 68,
+			"cases_correctional_staff": 47,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 16,
 			"deaths_health_staff": 0
@@ -488,11 +533,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 19,
+			"cases_incarcerated": 20,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 54,
+			"cases_correctional_staff": 77,
 			"deaths_correctional_staff": 0,
-			"cases_health_staff": 10,
+			"cases_health_staff": 22,
 			"deaths_health_staff": 0
 		},
 		{
@@ -505,8 +550,8 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 1,
-			"deaths_correctional_staff": 0,
+			"cases_correctional_staff": 9,
+			"deaths_correctional_staff": 1,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
 		},
@@ -535,7 +580,7 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 2,
+			"cases_correctional_staff": 6,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -563,11 +608,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 1,
+			"cases_incarcerated": 14,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 1,
 			"deaths_correctional_staff": 0,
-			"cases_health_staff": 0,
+			"cases_health_staff": 3,
 			"deaths_health_staff": 0
 		},
 				{
@@ -578,11 +623,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 1,
+			"cases_incarcerated": 203,
 			"deaths_incarcerated": 1,
-			"cases_correctional_staff": 7,
+			"cases_correctional_staff": 57,
 			"deaths_correctional_staff": 0,
-			"cases_health_staff": 3,
+			"cases_health_staff": 9,
 			"deaths_health_staff": 0
 		},
 		{
@@ -593,9 +638,9 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
+			"cases_incarcerated": 8,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 2,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -612,7 +657,7 @@
 			"deaths_incarcerated": 0,
 			"cases_correctional_staff": 1,
 			"deaths_correctional_staff": 0,
-			"cases_health_staff": 1,
+			"cases_health_staff": 2,
 			"deaths_health_staff": 0
 		},
 		{
@@ -653,11 +698,11 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 4,
+			"cases_incarcerated": 69,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 21,
+			"cases_correctional_staff": 77,
 			"deaths_correctional_staff": 0,
-			"cases_health_staff": 2,
+			"cases_health_staff": 7,
 			"deaths_health_staff": 0
 		},
 		{
@@ -700,7 +745,7 @@
 				],
 			"cases_incarcerated": 0,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 0,
+			"cases_correctional_staff": 2,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -713,9 +758,9 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 0,
+			"cases_incarcerated": 4,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 1,
+			"cases_correctional_staff": 6,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
@@ -743,9 +788,9 @@
 				"orgB",
 				"orgC"
 				],
-			"cases_incarcerated": 3,
+			"cases_incarcerated": 19,
 			"deaths_incarcerated": 0,
-			"cases_correctional_staff": 5,
+			"cases_correctional_staff": 6,
 			"deaths_correctional_staff": 0,
 			"cases_health_staff": 0,
 			"deaths_health_staff": 0
