@@ -34,16 +34,18 @@
       var request = gapi.client.sheets.spreadsheets.values.get(params);
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
-        console.log(response.result);
+        window.allData = response.result;
+        // console.log(response.result);
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
       });
     }
+    console.log(allData);
 
     function initClient() {
       var API_KEY = 'AIzaSyCdydtjOgNrIR-ZDgndgUguX1-XXrxh3vk';  // TODO: Update placeholder with desired API key.
 
-      var CLIENT_ID = '1038900222098-rfrp84m7656up90ge9ts64j3s48g7krt.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+      // var CLIENT_ID = '1038900222098-rfrp84m7656up90ge9ts64j3s48g7krt.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
 
       // TODO: Authorize using one of the following scopes:
       //   'https://www.googleapis.com/auth/drive'
@@ -51,19 +53,14 @@
       //   'https://www.googleapis.com/auth/drive.readonly'
       //   'https://www.googleapis.com/auth/spreadsheets'
       //   'https://www.googleapis.com/auth/spreadsheets.readonly'
-      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+      // var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
 
       gapi.client.init({
         'apiKey': API_KEY,
-        // 'clientId': CLIENT_ID,
-        // 'scope': SCOPE,
         'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
       }).then(function() {
-      	// console.log(response.result);
-      	// console.log('you failed');
-      	makeApiCall(); // trying this
-        // gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-        // updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+      	makeApiCall(); 
+        
       });
     }
 
@@ -71,24 +68,11 @@
       gapi.load('client', initClient);
     }
 
-    // function updateSignInStatus(isSignedIn) {
-    //   if (isSignedIn) {
-    //     makeApiCall();
-    //   }
-    // }
-
-    // function handleSignInClick(event) {
-    //   gapi.auth2.getAuthInstance().signIn();
-    // }
-
-    // function handleSignOutClick(event) {
-    //   gapi.auth2.getAuthInstance().signOut();
-    // }
     </script>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
   </script>
-    <p>attempt 5</p>
+    <p>attempt 7</p>
   </body>
 </html>
