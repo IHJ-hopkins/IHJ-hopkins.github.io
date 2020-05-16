@@ -82,15 +82,16 @@
     // function handleSignOutClick(event) {
     //   gapi.auth2.getAuthInstance().signOut();
     // }
-    makeApiCall();
     </script>
     <!-- <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()"> -->
-    <script async defer src="https://apis.google.com/js/api.js">
+    <script async defer src="https://apis.google.com/js/api.js"
+    	onload="this.onload=function(){};makeApiCall()"
+    	nreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
     <!-- <button id="signin-button" onclick="handleSignInClick()">Sign in</button> -->
     <!-- <button id="signout-button" onclick="handleSignOutClick()">Sign out</button> -->
-    <p>i'm going to scream</p>
+    <p>attempt 3</p>
   </body>
 </html>
