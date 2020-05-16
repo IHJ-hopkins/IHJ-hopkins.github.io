@@ -34,9 +34,9 @@
       var request = gapi.client.sheets.spreadsheets.values.get(params);
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
-        // console.log(response.result);
-        var allData = response.result; 
-        console.log(allData);
+        console.log(response.result);
+        // var allData = response.result; 
+        // console.log(allData);
 
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
@@ -59,7 +59,7 @@
       gapi.load('client', initClient);
     }
 
-    function 
+    // function 
 
     </script>
     <script async defer src="https://apis.google.com/js/api.js"
