@@ -34,24 +34,17 @@
       var request = gapi.client.sheets.spreadsheets.values.get(params);
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
-        console.log(response.result);
+        // console.log(response.result);
+        var allData = response.result; 
+        console.log(allData);
+
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
       });
     }
 
     function initClient() {
-      var API_KEY = 'AIzaSyCdydtjOgNrIR-ZDgndgUguX1-XXrxh3vk';  // TODO: Update placeholder with desired API key.
-
-      // var CLIENT_ID = '1038900222098-rfrp84m7656up90ge9ts64j3s48g7krt.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
-
-      // TODO: Authorize using one of the following scopes:
-      //   'https://www.googleapis.com/auth/drive'
-      //   'https://www.googleapis.com/auth/drive.file'
-      //   'https://www.googleapis.com/auth/drive.readonly'
-      //   'https://www.googleapis.com/auth/spreadsheets'
-      //   'https://www.googleapis.com/auth/spreadsheets.readonly'
-      // var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+      var API_KEY = 'AIzaSyCdydtjOgNrIR-ZDgndgUguX1-XXrxh3vk';
 
       gapi.client.init({
         'apiKey': API_KEY,
@@ -66,11 +59,13 @@
       gapi.load('client', initClient);
     }
 
+    function 
+
     </script>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
   </script>
-    <p>attempt 5</p>
+    <p>attempt 6</p>
   </body>
 </html>
