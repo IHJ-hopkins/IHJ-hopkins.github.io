@@ -13,7 +13,6 @@
        https://developers.google.com/sheets/api/quickstart/js#step_2_set_up_the_sample
     -->
     <script>
-	var allData;
     function makeApiCall() {
       var params = {
         spreadsheetId: '1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk',
@@ -35,13 +34,11 @@
       var request = gapi.client.sheets.spreadsheets.values.get(params);
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
-        allData = response.result;
-        // console.log(response.result);
+        console.log(response.result);
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
       });
     }
-    console.log(allData);
 
     function initClient() {
       var API_KEY = 'AIzaSyCdydtjOgNrIR-ZDgndgUguX1-XXrxh3vk';  // TODO: Update placeholder with desired API key.
@@ -74,6 +71,6 @@
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
   </script>
-    <p>attempt 8</p>
+    <p>attempt 5</p>
   </body>
 </html>
